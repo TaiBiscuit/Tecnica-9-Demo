@@ -1,0 +1,274 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto';
+    overflow-y:scroll;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+}
+
+
+/*  NAV-BARS */
+
+
+
+.navbar-main{
+    display: flex;
+    width: 100%;
+    height: 65px;
+    padding: 0 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+.navbar-main ul{
+    display: flex;
+    height: 45px;
+}
+
+.navbar-main li{
+
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 12px 10px 0 10px;
+}
+
+.navbar-main li:hover{
+    background-color: white;
+}
+
+.navbar-main li a{
+    color: black;
+    text-decoration: none;
+}
+
+
+.navbar-content{
+    display: flex;
+    width: 100%;
+    height: 65px;
+    padding: 0 50px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: lightblue;
+}
+
+.navbar-content ul{
+    display: flex;
+    height: 45px;
+}
+
+.navbar-content li{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 12px 10px 0 10px;
+}
+
+.navbar-content li:hover{
+    background-color: white;
+}
+
+.navbar-content li a{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+
+/*LOGOS*/
+
+
+
+.logo-main{
+    width: 200px;
+    height: 200px;
+}
+
+.logo-content{
+    width: 50px;
+    height: 50px;
+}
+
+/* BODY */
+
+
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 5rem 0 5rem;
+}
+
+
+
+/* CONTENT PAGE */
+
+
+
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "select-list project-show";
+}
+  
+.select-list{ 
+    grid-area: select-list; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* PROJECT ZONE*/
+
+
+
+.project-show { 
+    position: relative;
+    grid-area: project-show; 
+
+    padding: 5rem 2rem 0rem 5rem;
+    background-color: rgb(138, 175, 187);
+}
+
+.display-zone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-thumbnail{
+    width: 1200px;
+    height: 620px;
+    z-index: 1;
+}
+
+.student-list-li{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.student-btn{
+    border: none;
+    background-color: transparent;
+    padding: 1rem;
+}
+
+.student-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.student-list-name{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.description-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 103.7%;
+    height: 35%;
+    bottom: 12%;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.description-text{
+    padding: 2rem 1rem 2rem 1rem;
+    color: white;
+}
+
+/* DISPLAY ICONS */
+
+.display-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-icons-btn{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    color: black;
+    background-color: aquamarine;
+}
+
+.display-icons-btn:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+
+/* FOOTER */
+
+.footer-c{
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+/* QUERI */
+
+@media only screen and (max-width:1024px){
+.project-thumbnail{
+    width: 603px;
+    height: 432px;
+}
+.description-box{
+    min-width: 106.7%;
+    bottom: 15.6%;
+    position: absolute;
+    z-index: 2;
+}
+.description-text{
+    font-size: 15px;
+}
+
+}
+
+
+
+.hide{
+    display: none;
+}
