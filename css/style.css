@@ -6,7 +6,6 @@
 
 body{
     font-family: 'Roboto';
-    overflow-y:scroll;
     padding: 0;
     margin: 0;
 }
@@ -126,6 +125,7 @@ main{
 
 .container {  
     display: grid;
+    min-height: 85vh;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
@@ -150,11 +150,16 @@ main{
 
 
 .project-show { 
+    display: flex;
+    min-width: 70vw;
+    max-height: 80vh;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     grid-area: project-show; 
-
     padding: 5rem 2rem 0rem 5rem;
     background-color: rgb(138, 175, 187);
+
 }
 
 .display-zone{
@@ -162,10 +167,16 @@ main{
     justify-content: center;
     align-items: center;
 }
+
 .project-thumbnail{
-    width: 1200px;
-    height: 620px;
+    width: 880px;
+    height: 580px;
     z-index: 1;
+}
+
+.project-video{
+    width: 880px;
+    height: 580px;
 }
 
 .student-list-li{
@@ -195,9 +206,9 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 103.7%;
     height: 35%;
     bottom: 12%;
+    right: 0.1%;
     position: absolute;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.5);
@@ -208,10 +219,15 @@ main{
     color: white;
 }
 
+
+
+
 /* DISPLAY ICONS */
 
 .display-icons{
     display: flex;
+    position: absolute;
+    bottom: 0;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -220,6 +236,7 @@ main{
 .display-icons-btn{
     margin-top: 2rem;
     margin-bottom: 1rem;
+    margin-right: 1rem;
     padding: 1rem;
     border: none;
     border-radius: 10px;
@@ -236,6 +253,7 @@ main{
 
 /* FOOTER */
 
+
 .footer-c{
     position: absolute;
     bottom: 0;
@@ -248,27 +266,55 @@ main{
 
 
 
-/* QUERI */
+/* QUERIES */
 
 @media only screen and (max-width:1024px){
-.project-thumbnail{
-    width: 603px;
-    height: 432px;
-}
-.description-box{
-    min-width: 106.7%;
-    bottom: 15.6%;
-    position: absolute;
-    z-index: 2;
-}
-.description-text{
-    font-size: 15px;
+
+    .project-thumbnail{
+        width: 603px;
+        height: 439px;
+    }
+
+    .project-video{
+        width: 603px;
+        height: 439px;
+    }
+
+    .description-box{
+        bottom: 15.6%;
+        position: absolute;
+        z-index: 2;
+    }
+    .description-text{
+        font-size: 15px;
+    }
 }
 
-}
+@media only screen and (max-width:1280px){
+
+    .project-thumbnail{
+        width: 732px;
+        height: 439px;
+    }
+
+    .project-video{
+        width: 732px;
+        height: 439px; 
+    }
+
+    .description-box{
+        bottom: 15.6%;
+        position: absolute;
+        z-index: 2;
+    }
+    .description-text{
+        font-size: 15px;
+    }
+    }
 
 
 
 .hide{
     display: none;
 }
+
