@@ -8,9 +8,11 @@ const buttonZone = document.getElementById('select-list-ul');
 const imageZone = document.getElementById('image-zone');
 const videoZone = document.getElementById('video-zone');
 
+
 //BOTONES
 const moreInfo = document.getElementById('more-info');
 const showVideo = document.getElementById('show-video'); 
+const goDrive = document.getElementById('go-drive');
 
 
 
@@ -149,6 +151,8 @@ const renderButtons = async (data) => {
         }
     })
 }
+
+
 
 const paintAgain = async (selected, data) => {
 
