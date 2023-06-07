@@ -7,9 +7,11 @@ const infoBox = document.getElementById('description-box');
 const buttonZone = document.getElementById('select-list-ul');
 const imageZone = document.getElementById('image-zone');
 const videoZone = document.getElementById('video-zone');
+const displayIconZone = document.getElementById('display-icons');
 
 
 //BOTONES
+
 const moreInfo = document.getElementById('more-info');
 const showVideo = document.getElementById('show-video'); 
 const goDrive = document.getElementById('go-drive');
@@ -105,7 +107,7 @@ const renderContent = async (data) => {
 
     videoDiv.innerHTML=
     `
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/${data[0].video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="project-video hide" id="project-video"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/${data[0].video}" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="project-video hide" id="project-video"></iframe>
     `
 
     videoZone.appendChild(videoDiv);
@@ -122,6 +124,16 @@ const renderContent = async (data) => {
     `
 
     infoBox.appendChild(descDiv);
+
+    //DRIVE 
+
+    displayIconZone.addEventListener('click', (e) => {
+        e.preventDefault();
+        const sel = e.target.id;
+        if(sel == 'go-drive'){
+            window.location.href=`${data[0].drive}`;
+        }
+    })
 
 }
 
@@ -150,6 +162,7 @@ const renderButtons = async (data) => {
             paintAgain(selected, data)
         }
     })
+
 }
 
 
@@ -194,4 +207,14 @@ const paintAgain = async (selected, data) => {
     `
 
     infoBox.appendChild(descDiv);
+
+    //DRIVE 
+
+    displayIconZone.addEventListener('click', (e) => {
+        e.preventDefault();
+        const sel = e.target.id;
+        if(sel == 'go-drive'){
+            window.location.href=`${data[selected-1].drive}`;
+        }
+    })
 }
