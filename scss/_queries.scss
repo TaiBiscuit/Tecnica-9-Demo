@@ -1,0 +1,54 @@
+/* QUERIES */
+
+@media only screen and (max-width:1366px){
+
+    .project-thumbnail{
+        height: 59.9vh;
+    }
+
+    .project-video{
+        height: 59.9vh;
+    }
+
+    .description-box{
+        bottom: 11.9%;
+        position: absolute;
+        z-index: 2;
+    }
+
+    }
+
+@media only screen and (max-width:1280px){
+
+    .project-thumbnail{
+        height: 61.9vh;
+    }
+
+    .project-video{
+        height: 61.9vh;
+    }
+
+    .description-box{
+        bottom: 11.9%;
+        position: absolute;
+        z-index: 2;
+    }
+
+    }
+    
+@media only screen and (max-width:1024px){
+
+    .project-thumbnail{
+
+    }
+
+    .project-video{
+        height: 61.9vh;
+    }
+
+    .description-box{
+        bottom: 11.9%;
+        position: absolute;
+        z-index: 2;
+    }
+}

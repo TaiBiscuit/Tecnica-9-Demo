@@ -1,0 +1,25 @@
+.container {  
+    display: grid;
+    min-height: 85vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "select-list project-show";
+}
+  
+.select-list{ 
+    grid-area: select-list; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@import 'projectZone';
+
+.footer-c{
+    position: absolute;
+    bottom: 0;
+}

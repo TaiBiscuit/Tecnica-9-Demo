@@ -7,15 +7,13 @@ const infoBox = document.getElementById('description-box');
 const buttonZone = document.getElementById('select-list-ul');
 const imageZone = document.getElementById('image-zone');
 const videoZone = document.getElementById('video-zone');
-const displayIconZone = document.getElementById('display-icons');
 
 
 //BOTONES
 
 const moreInfo = document.getElementById('more-info');
 const showVideo = document.getElementById('show-video'); 
-const goDrive = document.getElementById('go-drive');
-
+const driveBtn = document.getElementById('driveBtn');
 
 
 
@@ -127,14 +125,7 @@ const renderContent = async (data) => {
 
     //DRIVE 
 
-    displayIconZone.addEventListener('click', (e) => {
-        e.preventDefault();
-        const sel = e.target.id;
-        if(sel == 'go-drive'){
-            window.location.href=`${data[0].drive}`;
-        }
-    })
-
+    driveBtn.href= `${data[0].drive}`;
 }
 
 
@@ -210,11 +201,5 @@ const paintAgain = async (selected, data) => {
 
     //DRIVE 
 
-    displayIconZone.addEventListener('click', (e) => {
-        e.preventDefault();
-        const sel = e.target.id;
-        if(sel == 'go-drive'){
-            window.location.href=`${data[selected-1].drive}`;
-        }
-    })
+    driveBtn.href= `${data[selected-1].drive}`;
 }

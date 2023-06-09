@@ -1,0 +1,96 @@
+.project-show { 
+    display: flex;
+    min-width: 70vw;
+    max-height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    grid-area: project-show; 
+    padding: 5rem 2rem 0rem 5rem;
+    background-color: rgb(138, 175, 187);
+
+}
+
+.display-zone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-thumbnail{
+    width: 50vw;    
+    height: 61.9vh;
+    z-index: 1;
+}
+
+.project-video{
+    width: 50vw;
+    height: 61.9vh;
+}
+
+.student-list-li{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.student-btn{
+    border: none;
+    background-color: transparent;
+    padding: 1rem;
+}
+
+.student-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.student-list-name{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.description-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35%;
+    bottom: 12%;
+    right: 0.1%;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.description-text{
+    padding: 2rem 1rem 2rem 1rem;
+    color: white;
+    font-size: 0.8vw;
+}
+
+.display-icons{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-icons-btn{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    color: black;
+    background-color: aquamarine;
+}
+
+.display-icons-btn:hover{
+    background-color: blueviolet;
+    color: white;
+}
