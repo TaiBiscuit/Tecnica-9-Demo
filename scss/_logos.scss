@@ -1,6 +1,14 @@
+.background-pic{
+    top: 10vh;
+    position: absolute;
+    z-index: 1;
+}
+
 .logo-main{
     width: 200px;
     height: 200px;
+    z-index: 2;
+    border-radius: 50%
 }
 
 .logo-content{

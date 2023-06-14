@@ -68,20 +68,31 @@ main {
   color: black;
   text-decoration: none; }
 
+.background-pic {
+  top: 10vh;
+  position: absolute;
+  z-index: 1; }
+
 .logo-main {
   width: 200px;
-  height: 200px; }
+  height: 200px;
+  z-index: 2;
+  border-radius: 50%; }
 
 .logo-content {
   width: 50px;
   height: 50px; }
 
 .content-box {
+  background-image: url("../img/background-index.png");
   display: flex;
+  background-repeat: repeat;
+  height: 93.1vh;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 1rem 5rem 0 5rem; }
+  .content-box .intro-text {
+    color: white; }
 
 .container {
   display: grid;

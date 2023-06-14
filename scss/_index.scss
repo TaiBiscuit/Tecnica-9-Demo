@@ -1,7 +1,13 @@
 .content-box {
+    background-image: url('../img/background-index.png');
     display: flex;
+    background-repeat: repeat;
+    height: 93.1vh;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 1rem 5rem 0 5rem;
+
+    .intro-text{
+        color: white;
+    }
 }
