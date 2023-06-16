@@ -1,13 +1,51 @@
+.index-body{
+    background: linear-gradient(0deg, rgba(25,70,99,1) 0%, rgba(29,41,51,1) 4%);
+}
+
 .content-box {
-    background-image: url('../img/background-index.png');
-    display: flex;
-    background-repeat: repeat;
+/* a */
+
     height: 93.1vh;
+}
+
+.img-header{
+    background-image: url('../img/background-index.png');
     flex-direction: column;
     align-items: center;
-    padding: 1rem 5rem 0 5rem;
-
+    display: flex;
+    background-repeat: repeat;
     .intro-text{
+        padding-top: 10rem;
+        margin-bottom: 6rem;
         color: white;
     }
 }
+
+.intro-section{
+    color: white;
+    padding: 10rem 0rem 2rem 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "intro-text intro-img";
+
+    .intro-text { 
+        grid-area: intro-text; 
+    }
+  
+    .intro-img { 
+        display: flex;
+        justify-content: center;
+        grid-area: intro-img;
+        
+        .star-wars-img{
+            width: 725px;
+            height: 513px;
+        }
+    }
+}
+  
