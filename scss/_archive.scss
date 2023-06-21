@@ -1,4 +1,4 @@
-.select-body{
+.archive-body{
     background: linear-gradient(0deg, rgba(25,70,99,1) 0%, rgba(29,41,51,1) 4%);
 
     .navbar-select{
@@ -26,8 +26,34 @@
             a{
                 color: white;
                 text-decoration: none;
-
             }
         }
     }
+
+    .info{
+        height: 93.5vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .app-container {  
+        padding: 12rem 2rem;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+      }
+      
+      .archive-intro { 
+        grid-area: 1 / 1 / 2 / 2; 
+        .archive-text{
+            color: white;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid white;
+        }
+    }
+      
+      .archive-content { grid-area: 2 / 1 / 3 / 2; }
+      
 }

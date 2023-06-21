@@ -27,11 +27,11 @@ main {
   height: 45px; }
 
 .navbar-main li {
+  display: flex;
   list-style: none;
-  align-items: center;
   text-align: center;
   margin: 0 auto;
-  padding: 12px 10px 0 10px; }
+  padding: 12px 10px 43px 10px; }
 
 .navbar-main li:hover {
   background-color: white; }
@@ -50,8 +50,7 @@ main {
   background-color: lightblue; }
 
 .navbar-content ul {
-  display: flex;
-  height: 45px; }
+  display: flex; }
 
 .navbar-content li {
   display: flex;
@@ -59,7 +58,7 @@ main {
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  padding: 12px 10px 0 10px; }
+  padding: 10px 10px 0 10px; }
 
 .navbar-content li:hover {
   background-color: white; }
@@ -81,7 +80,8 @@ main {
 
 .logo-content {
   width: 50px;
-  height: 50px; }
+  height: 50px;
+  border-radius: 50%; }
 
 .index-body {
   background: linear-gradient(0deg, #194663 0%, #1d2933 4%); }
@@ -100,6 +100,10 @@ main {
     padding-top: 10rem;
     margin-bottom: 6rem;
     color: white; }
+    .img-header .intro-text .welcome-text {
+      padding: 0.5rem;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.5); }
 
 .intro-section {
   color: white;
@@ -112,18 +116,42 @@ main {
   grid-auto-flow: row;
   grid-template-areas: "intro-text intro-img"; }
   .intro-section .intro-text {
+    display: flex;
+    flex-direction: column;
     grid-area: intro-text; }
+    .intro-section .intro-text .go-proyects-btn {
+      border: none;
+      border-radius: 10px;
+      margin-top: 1rem;
+      color: white;
+      background-color: black; }
+      .intro-section .intro-text .go-proyects-btn:hover {
+        background-color: white;
+        color: black; }
+      .intro-section .intro-text .go-proyects-btn a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 100%;
+        color: white;
+        text-decoration: none; }
+        .intro-section .intro-text .go-proyects-btn a:hover {
+          color: black; }
   .intro-section .intro-img {
     display: flex;
     justify-content: center;
     grid-area: intro-img; }
     .intro-section .intro-img .star-wars-img {
-      width: 725px;
-      height: 513px; }
+      width: 36vw;
+      height: 55vh; }
+
+.content-body {
+  background: linear-gradient(0deg, #194663 0%, #1d2933 4%); }
 
 .container {
   display: grid;
-  min-height: 85vh;
+  min-height: 91vh;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
@@ -169,15 +197,19 @@ main {
   margin-bottom: 1rem; }
 
 .student-btn {
+  color: white;
   border: none;
   background-color: transparent;
   padding: 1rem; }
 
 .student-btn:hover {
-  background-color: black;
-  color: white; }
+  background-color: white;
+  color: black; }
 
 .student-list-name {
+  color: white;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid white;
   font-size: 15px;
   font-style: italic; }
 
@@ -219,6 +251,49 @@ main {
 .display-icons-btn:hover {
   background-color: blueviolet;
   color: white; }
+
+.archive-body {
+  background: linear-gradient(0deg, #194663 0%, #1d2933 4%); }
+  .archive-body .navbar-select {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .archive-body .navbar-select ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+    .archive-body .navbar-select .year-link-select {
+      list-style: none;
+      text-align: center;
+      margin: 0 auto;
+      margin: 10px 40px 10px 10px;
+      padding: 1rem 1rem 1rem 1rem;
+      border-radius: 10px; }
+      .archive-body .navbar-select .year-link-select:hover {
+        background-color: rgba(255, 255, 255, 0.397); }
+      .archive-body .navbar-select .year-link-select a {
+        color: white;
+        text-decoration: none; }
+  .archive-body .info {
+    height: 93.5vh;
+    display: flex;
+    justify-content: center; }
+  .archive-body .app-container {
+    padding: 12rem 2rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row; }
+  .archive-body .archive-intro {
+    grid-area: 1 / 1 / 2 / 2; }
+    .archive-body .archive-intro .archive-text {
+      color: white;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid white; }
+  .archive-body .archive-content {
+    grid-area: 2 / 1 / 3 / 2; }
 
 .select-body {
   background: linear-gradient(0deg, #194663 0%, #1d2933 4%); }
@@ -395,6 +470,16 @@ main {
     bottom: 11.9%;
     position: absolute;
     z-index: 2; } }
+
+@media only screen and (max-width: 320px) {
+  .navbar-main {
+    height: 100px; }
+    .navbar-main ul {
+      display: flex;
+      flex-direction: column;
+      height: 0px; }
+      .navbar-main ul li {
+        padding: 10px 0px; } }
 
 .hide {
   display: none; }

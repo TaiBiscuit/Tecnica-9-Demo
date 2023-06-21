@@ -36,17 +36,21 @@
 }
 
 .student-btn{
+    color: white;
     border: none;
     background-color: transparent;
     padding: 1rem;
 }
 
 .student-btn:hover{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .student-list-name{
+    color: white;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid white;
     font-size: 15px;
     font-style: italic;
 }

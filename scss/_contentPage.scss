@@ -1,6 +1,10 @@
+.content-body{
+    background: linear-gradient(0deg, rgba(25,70,99,1) 0%, rgba(29,41,51,1) 4%);
+}
+
 .container {  
     display: grid;
-    min-height: 85vh;
+    min-height: 91vh;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;

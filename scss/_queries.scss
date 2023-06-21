@@ -38,10 +38,6 @@
     
 @media only screen and (max-width:1024px){
 
-    .project-thumbnail{
-
-    }
-
     .project-video{
         height: 61.9vh;
     }
@@ -50,5 +46,20 @@
         bottom: 11.9%;
         position: absolute;
         z-index: 2;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+    .navbar-main{
+        height: 100px;
+        ul{
+            display: flex;
+            flex-direction: column;
+            height: 0px;
+            li{
+                padding: 10px 0px;
+            }
+        }
     }
 }
