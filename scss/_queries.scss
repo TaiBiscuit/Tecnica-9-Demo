@@ -52,13 +52,144 @@
 
 @media only screen and (max-width: 320px) {
     .navbar-main{
-        height: 100px;
+
         ul{
             display: flex;
             flex-direction: column;
-            height: 0px;
+            height: 376px;
             li{
-                padding: 10px 0px;
+                padding: 10px 0px 20px 0px;
+                border-bottom: solid 1px black;
+            }
+        }
+    }
+
+    .logo-main{
+        width: 150px;
+        height: 150px;
+    }
+
+    .welcome-text{
+        font-size: 18px;
+    }
+
+    .content-box{
+        height: 100%;
+    }
+
+    .intro-section{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+
+        .intro-text{
+            margin: 1rem;
+            font-size: 18px;
+        }
+
+        .star-wars-img{
+            width: 89vw !important;
+            height: 45vh !important;
+            border-radius: 10px;
+            border: 2px solid #26006d;
+        }
+    }
+
+    .contact-section{
+        margin-bottom: 2rem;
+    }
+
+    .archive-body{
+        .info{
+            .app-container{
+                padding: 3rem 2rem;
+            }
+        }
+    }
+
+    .under-main{
+        height: 50%;
+        text-align: center;
+    }
+
+    .title{
+        font-size: 1.5rem;
+    }
+    .sub-title{
+        font-size: 1rem;
+    }
+
+    .select-body{
+        align-items: baseline;
+
+        .navbar-select{
+            align-items: flex-start;
+
+            ul{
+                flex-direction: column;
+                margin-top: 3rem;
+            }
+        }
+
+    }
+
+
+    .content{
+        .container{
+            display: flex;
+            flex-direction: column;
+
+            .select-list{
+                .select-list-ul{
+                    display: flex;
+                    flex-direction: row;
+                    .btns{
+                        border-right: 1px solid white;
+                        .student-list-li{
+                            .student-btn{
+                                border-bottom: 1px solid white;
+                            }
+                            .student-list-name{
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .project-show{
+                padding: 2rem 2rem 0 2rem;
+
+                .display-zone{
+                    .image-zone {
+                        .yes{
+                            .project-thumbnail{
+                                height: 40vh;
+                                width: 90vw;
+                                margin-bottom: 6rem;
+                            }
+                        }
+                    }
+
+                    .video{
+                        .yes{
+                            .project-video{
+                                height: 40vh;
+                                width: 90vw;
+                                margin-bottom: 6rem;
+                            }
+                        }
+                    }
+
+                    .description-box{
+                        bottom: 22.9%;
+                        .yes{
+                            .description-text{
+                                font-size: 5vw;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

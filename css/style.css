@@ -16,29 +16,25 @@ main {
 .navbar-main {
   display: flex;
   width: 100%;
-  height: 65px;
   padding: 0 50px;
   justify-content: center;
   align-items: center;
   background-color: lightblue; }
-
-.navbar-main ul {
-  display: flex;
-  height: 45px; }
-
-.navbar-main li {
-  display: flex;
-  list-style: none;
-  text-align: center;
-  margin: 0 auto;
-  padding: 12px 10px 43px 10px; }
-
-.navbar-main li:hover {
-  background-color: white; }
-
-.navbar-main li a {
-  color: black;
-  text-decoration: none; }
+  .navbar-main ul {
+    display: flex;
+    align-items: center;
+    height: 65px; }
+    .navbar-main ul li {
+      display: flex;
+      list-style: none;
+      text-align: center;
+      margin: 0 auto;
+      padding: 12px 10px 33px 10px; }
+      .navbar-main ul li:hover {
+        background-color: white; }
+      .navbar-main ul li a {
+        color: black;
+        text-decoration: none; }
 
 .navbar-content {
   display: flex;
@@ -73,6 +69,7 @@ main {
   z-index: 1; }
 
 .logo-main {
+  margin-top: 10rem;
   width: 200px;
   height: 200px;
   z-index: 2;
@@ -472,14 +469,76 @@ main {
     z-index: 2; } }
 
 @media only screen and (max-width: 320px) {
-  .navbar-main {
-    height: 100px; }
-    .navbar-main ul {
+  .navbar-main ul {
+    display: flex;
+    flex-direction: column;
+    height: 376px; }
+    .navbar-main ul li {
+      padding: 10px 0px 20px 0px;
+      border-bottom: solid 1px black; }
+  .logo-main {
+    width: 150px;
+    height: 150px; }
+  .welcome-text {
+    font-size: 18px; }
+  .content-box {
+    height: 100%; }
+  .intro-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0; }
+    .intro-section .intro-text {
+      margin: 1rem;
+      font-size: 18px; }
+    .intro-section .star-wars-img {
+      width: 89vw !important;
+      height: 45vh !important;
+      border-radius: 10px;
+      border: 2px solid #26006d; }
+  .contact-section {
+    margin-bottom: 2rem; }
+  .archive-body .info .app-container {
+    padding: 3rem 2rem; }
+  .under-main {
+    height: 50%;
+    text-align: center; }
+  .title {
+    font-size: 1.5rem; }
+  .sub-title {
+    font-size: 1rem; }
+  .select-body {
+    align-items: baseline; }
+    .select-body .navbar-select {
+      align-items: flex-start; }
+      .select-body .navbar-select ul {
+        flex-direction: column;
+        margin-top: 3rem; }
+  .content .container {
+    display: flex;
+    flex-direction: column; }
+    .content .container .select-list .select-list-ul {
       display: flex;
-      flex-direction: column;
-      height: 0px; }
-      .navbar-main ul li {
-        padding: 10px 0px; } }
+      flex-direction: row; }
+      .content .container .select-list .select-list-ul .btns {
+        border-right: 1px solid white; }
+        .content .container .select-list .select-list-ul .btns .student-list-li .student-btn {
+          border-bottom: 1px solid white; }
+        .content .container .select-list .select-list-ul .btns .student-list-li .student-list-name {
+          border-bottom: none; }
+    .content .container .project-show {
+      padding: 2rem 2rem 0 2rem; }
+      .content .container .project-show .display-zone .image-zone .yes .project-thumbnail {
+        height: 40vh;
+        width: 90vw;
+        margin-bottom: 6rem; }
+      .content .container .project-show .display-zone .video .yes .project-video {
+        height: 40vh;
+        width: 90vw;
+        margin-bottom: 6rem; }
+      .content .container .project-show .display-zone .description-box {
+        bottom: 22.9%; }
+        .content .container .project-show .display-zone .description-box .yes .description-text {
+          font-size: 5vw; } }
 
 .hide {
   display: none; }
