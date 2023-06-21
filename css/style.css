@@ -468,7 +468,7 @@ main {
     position: absolute;
     z-index: 2; } }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
   .navbar-main ul {
     display: flex;
     flex-direction: column;
@@ -477,6 +477,7 @@ main {
       padding: 10px 0px 20px 0px;
       border-bottom: solid 1px black; }
   .logo-main {
+    margin-top: 1rem;
     width: 150px;
     height: 150px; }
   .welcome-text {
