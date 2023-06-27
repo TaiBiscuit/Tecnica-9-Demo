@@ -105,6 +105,16 @@
             .app-container{
                 padding: 3rem 2rem;
             }
+
+            .archive-container{
+                padding: 1rem 0.1rem;
+                
+                .archive-content{
+                    .item-container{
+                        margin: 50px 0px 50px 0px;
+                    }
+                }
+            }
         }
     }
 

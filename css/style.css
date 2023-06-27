@@ -274,7 +274,7 @@ main {
         text-decoration: none; }
   .archive-body .info {
     display: flex; }
-  .archive-body .app-container {
+  .archive-body .archive-container {
     padding: 12rem 2rem;
     display: grid;
     grid-auto-columns: 1fr;
@@ -315,7 +315,7 @@ main {
           .archive-body .archive-content .item-container .cards-container .card .card-img {
             width: 300px;
             height: 200px;
-            border: 1px solid red; }
+            border: 1px solid purple; }
 
 .select-body {
   background: linear-gradient(0deg, #194663 0%, #1d2933 4%); }
@@ -525,6 +525,10 @@ main {
     margin-bottom: 2rem; }
   .archive-body .info .app-container {
     padding: 3rem 2rem; }
+  .archive-body .info .archive-container {
+    padding: 1rem 0.1rem; }
+    .archive-body .info .archive-container .archive-content .item-container {
+      margin: 50px 0px 50px 0px; }
   .under-body {
     height: 110vh; }
   .under-main {
