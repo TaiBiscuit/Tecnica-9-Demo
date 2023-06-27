@@ -50,7 +50,7 @@
 }
 
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 377px) {
     .navbar-main{
 
         ul{
@@ -108,6 +108,10 @@
         }
     }
 
+    .under-body{
+        height: 110vh;
+    }
+    
     .under-main{
         height: 50%;
         text-align: center;

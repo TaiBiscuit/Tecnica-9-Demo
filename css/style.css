@@ -273,24 +273,49 @@ main {
         color: white;
         text-decoration: none; }
   .archive-body .info {
-    height: 93.5vh;
-    display: flex;
-    justify-content: center; }
+    display: flex; }
   .archive-body .app-container {
     padding: 12rem 2rem;
     display: grid;
-    grid-template-rows: 1fr 1fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row; }
   .archive-body .archive-intro {
-    grid-area: 1 / 1 / 2 / 2; }
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     .archive-body .archive-intro .archive-text {
       color: white;
       padding-bottom: 2rem;
       border-bottom: 1px solid white; }
   .archive-body .archive-content {
     grid-area: 2 / 1 / 3 / 2; }
+    .archive-body .archive-content .item-container {
+      max-width: 1800px;
+      flex-wrap: wrap;
+      margin: 100px 50px 50px 50px;
+      height: 100vh;
+      border-radius: 70px;
+      background-color: white; }
+      .archive-body .archive-content .item-container .cards-container {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1800px;
+        flex-wrap: wrap;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+        height: 100vh;
+        border-radius: 70px;
+        background-color: white; }
+        .archive-body .archive-content .item-container .cards-container .card {
+          width: 300px;
+          height: 200px;
+          margin: 2rem 2rem; }
+          .archive-body .archive-content .item-container .cards-container .card .card-img {
+            width: 300px;
+            height: 200px;
+            border: 1px solid red; }
 
 .select-body {
   background: linear-gradient(0deg, #194663 0%, #1d2933 4%); }
@@ -468,7 +493,7 @@ main {
     position: absolute;
     z-index: 2; } }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 377px) {
   .navbar-main ul {
     display: flex;
     flex-direction: column;
@@ -500,6 +525,8 @@ main {
     margin-bottom: 2rem; }
   .archive-body .info .app-container {
     padding: 3rem 2rem; }
+  .under-body {
+    height: 110vh; }
   .under-main {
     height: 50%;
     text-align: center; }
