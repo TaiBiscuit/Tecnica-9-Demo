@@ -77,14 +77,28 @@
                 background-color: white;
 
                 .card{
-                    width: 300px;
-                    height: 200px;
+                    max-width: 300px;
+                    max-height: 270px;
                     margin: 2rem 2rem;
+                    border: 1px solid purple;
 
                     .card-img{
-                        width: 300px;
+                        width: 297px;
                         height: 200px;   
-                        border: 1px solid purple;
+                    }
+
+                    .archive-title{
+                        margin: 0.5rem 1rem;
+                        font-weight: 700;
+                        border-bottom: 1px solid purple;
+                    }
+
+                    .archive-icons{
+                        display: inline-block;
+
+                        .archive-icon{
+                            margin: 0rem 1rem;
+                        }
                     }
                 }
             }    

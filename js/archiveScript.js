@@ -42,7 +42,12 @@ const renderContent = async (data) => {
         cardsBox.innerHTML+= 
         `
         <div class="card">
-        <img src="${elem.thumbnail}" alt="" class="card-img">
+          <img src="${elem.thumbnail}" alt="" class="card-img">
+          <p class="archive-title">${elem.nombre}</p>
+          <div class="archive-icons"> 
+            <i class="fas fa-phone archive-icon"></i>
+            <i class="far fa-file-alt archive-icon"></i>
+          </div>
         </div>
         `
 /*         imgBoxes.innerHTML=

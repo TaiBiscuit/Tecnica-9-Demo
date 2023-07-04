@@ -309,13 +309,21 @@ main {
         border-radius: 70px;
         background-color: white; }
         .archive-body .archive-content .item-container .cards-container .card {
-          width: 300px;
-          height: 200px;
-          margin: 2rem 2rem; }
+          max-width: 300px;
+          max-height: 270px;
+          margin: 2rem 2rem;
+          border: 1px solid purple; }
           .archive-body .archive-content .item-container .cards-container .card .card-img {
-            width: 300px;
-            height: 200px;
-            border: 1px solid purple; }
+            width: 297px;
+            height: 200px; }
+          .archive-body .archive-content .item-container .cards-container .card .archive-title {
+            margin: 0.5rem 1rem;
+            font-weight: 700;
+            border-bottom: 1px solid purple; }
+          .archive-body .archive-content .item-container .cards-container .card .archive-icons {
+            display: inline-block; }
+            .archive-body .archive-content .item-container .cards-container .card .archive-icons .archive-icon {
+              margin: 0rem 1rem; }
 
 .select-body {
   background: linear-gradient(0deg, #194663 0%, #1d2933 4%); }
